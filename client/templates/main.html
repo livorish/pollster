@@ -1,0 +1,16 @@
+<head>
+  <title>Pollster</title>
+</head>
+
+<body>
+  {{> toolbar}}
+  <div class="container">
+    {{> pollForm}}
+  </div>
+
+  <div class="container">
+    {{#each polls}}
+      {{> poll}}
+    {{/each}}
+  </div>
+</body>
